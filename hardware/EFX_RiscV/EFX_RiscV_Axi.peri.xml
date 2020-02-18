@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<efxpt:design_db name="EFX_RiscV_Axi" device_def="T20F256" location="D:\RISCV_10\hardware\EFX_RiscV" version="2019.3.272.3.4" db_version="20193999" last_change_date="Tue Feb 18 04:46:05 2020" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
+    <efxpt:device_info>
+        <efxpt:iobank_info>
+            <efxpt:iobank name="1A" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1B_1C" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1D_1E" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="3A_3B_3C" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="3D_3E" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="4A" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="4B" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="BR_CORNER" iostd="1.2 V"/>
+            <efxpt:iobank name="TL_CORNER" iostd="1.2 V"/>
+            <efxpt:iobank name="TR_CORNER" iostd="1.2 V"/>
+        </efxpt:iobank_info>
+        <efxpt:ctrl_info>
+            <efxpt:ctrl name="cfg" ctrl_def="CONFIG_CTRL0" clock_name="" is_clk_invert="false" cbsel_bus_name="cfg_CBSEL" config_ctrl_name="cfg_CONFIG" ena_capture_name="cfg_ENA" error_status_name="cfg_ERROR" um_signal_status_name="cfg_USR_STATUS" is_remote_update_enable="false" is_user_mode_enable="false"/>
+        </efxpt:ctrl_info>
+    </efxpt:device_info>
+    <efxpt:gpio_info device_def="T20F256">
+        <efxpt:gpio name="io_asyncReset" gpio_def="GPIOL_72" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="io_asyncReset" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_axiClk" gpio_def="GPIOR_125" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="io_axiClk" name_ddio_lo="" conn_type="alternate" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_gpioA[0]" gpio_def="GPIOR_104" mode="inout" bus_name="io_gpioA" is_lvds_gpio="false">
+            <efxpt:input_config name="io_gpioA_read[0]" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+            <efxpt:output_config name="io_gpioA_write[0]" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+            <efxpt:output_enable_config name="io_gpioA_writeEnable[0]" is_register="true" clock_name="io_axiClk" is_clock_inverted="false"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_gpioA[1]" gpio_def="GPIOR_105" mode="inout" bus_name="io_gpioA" is_lvds_gpio="false">
+            <efxpt:input_config name="io_gpioA_read[1]" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+            <efxpt:output_config name="io_gpioA_write[1]" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+            <efxpt:output_enable_config name="io_gpioA_writeEnable[1]" is_register="true" clock_name="io_axiClk" is_clock_inverted="false"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_gpioA[2]" gpio_def="GPIOR_117" mode="inout" bus_name="io_gpioA" is_lvds_gpio="false">
+            <efxpt:input_config name="io_gpioA_read[2]" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+            <efxpt:output_config name="io_gpioA_write[2]" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+            <efxpt:output_enable_config name="io_gpioA_writeEnable[2]" is_register="true" clock_name="io_axiClk" is_clock_inverted="false"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_gpioA[3]" gpio_def="GPIOR_118" mode="inout" bus_name="io_gpioA" is_lvds_gpio="false">
+            <efxpt:input_config name="io_gpioA_read[3]" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+            <efxpt:output_config name="io_gpioA_write[3]" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+            <efxpt:output_enable_config name="io_gpioA_writeEnable[3]" is_register="true" clock_name="io_axiClk" is_clock_inverted="false"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_gpioA[4]" gpio_def="GPIOR_153" mode="inout" bus_name="io_gpioA" is_lvds_gpio="false">
+            <efxpt:input_config name="io_gpioA_read[4]" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+            <efxpt:output_config name="io_gpioA_write[4]" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+            <efxpt:output_enable_config name="io_gpioA_writeEnable[4]" is_register="true" clock_name="io_axiClk" is_clock_inverted="false"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_gpioA[5]" gpio_def="GPIOR_154" mode="inout" bus_name="io_gpioA" is_lvds_gpio="false">
+            <efxpt:input_config name="io_gpioA_read[5]" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+            <efxpt:output_config name="io_gpioA_write[5]" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+            <efxpt:output_enable_config name="io_gpioA_writeEnable[5]" is_register="true" clock_name="io_axiClk" is_clock_inverted="false"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_gpioA[6]" gpio_def="GPIOR_155" mode="inout" bus_name="io_gpioA" is_lvds_gpio="false">
+            <efxpt:input_config name="io_gpioA_read[6]" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+            <efxpt:output_config name="io_gpioA_write[6]" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+            <efxpt:output_enable_config name="io_gpioA_writeEnable[6]" is_register="true" clock_name="io_axiClk" is_clock_inverted="false"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_gpioA[7]" gpio_def="GPIOR_156" mode="inout" bus_name="io_gpioA" is_lvds_gpio="false">
+            <efxpt:input_config name="io_gpioA_read[7]" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+            <efxpt:output_config name="io_gpioA_write[7]" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+            <efxpt:output_enable_config name="io_gpioA_writeEnable[7]" is_register="true" clock_name="io_axiClk" is_clock_inverted="false"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_jtag_tck" gpio_def="GPIOL_01" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="io_jtag_tck" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_jtag_tdi" gpio_def="GPIOL_08" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="io_jtag_tdi" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pullup" is_schmitt_trigger="true" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_jtag_tdo" gpio_def="GPIOL_09" mode="output" bus_name="" is_lvds_gpio="false">
+            <efxpt:output_config name="io_jtag_tdo" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_jtag_tms" gpio_def="GPIOL_00" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="io_jtag_tms" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pullup" is_schmitt_trigger="true" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_uartA_rxd" gpio_def="GPIOL_44" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="io_uartA_rxd" name_ddio_lo="" conn_type="normal" is_register="true" clock_name="io_axiClk" is_clock_inverted="false" pull_option="weak pullup" is_schmitt_trigger="true" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="io_uartA_txd" gpio_def="GPIOL_45" mode="output" bus_name="" is_lvds_gpio="false">
+            <efxpt:output_config name="io_uartA_txd" name_ddio_lo="" register_option="register" clock_name="io_axiClk" is_clock_inverted="false" drive_strength="4" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:global_unused_config state="input with weak pullup"/>
+        <efxpt:bus name="io_gpioA" mode="inout" msb="7" lsb="0"/>
+    </efxpt:gpio_info>
+    <efxpt:pll_info/>
+    <efxpt:lvds_info/>
+    <efxpt:jtag_info/>
+</efxpt:design_db>
