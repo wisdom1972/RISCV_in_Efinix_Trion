@@ -1,0 +1,17 @@
+﻿
+编译工具路径：
+D:\RISCV_Tools_Chain\eclipse;D:\RISCV_Tools_Chain\GNU MCU Eclipse\Build Tools\2.12-20190422-1053\bin;D:\RISCV_Tools_Chain\riscv64-unknown-elf-gcc\bin
+
+调试工具配置路径：
+
+D:\RISCV_Tools_Chain\riscv64-unknown-elf-gcc\bin\riscv64-unknown-elf-gdb.exe
+
+-f "D:\RISCV_Tools_Chain\cfg_tcl\interface\ftdi\c232hm.cfg" -c 'set MURAX_CPU0_YAML D:\\RISCV_10\\cpu0.yaml' -f "D:\RISCV_Tools_Chain\cfg_tcl\target\murax.cfg"
+
+D:\RISCV_10\openocd_VexRiscv\bin\win64\openocd.exe
+
+命令：
+set remotetimeout 60
+set arch riscv:rv32
+set mem inaccessible-by-default off
+
